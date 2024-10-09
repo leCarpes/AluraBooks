@@ -1,0 +1,58 @@
+
+.navMenu{
+   width: 24px;
+   height: 24px;
+   background-image: url("../assets/icons/Menu.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   display: inline-block;
+}
+
+.navHeader{
+   background-color: var(--white);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+}
+
+.container{
+   display: flex;
+   align-items: center;
+}
+
+.containerImage{
+   padding: 1em;
+}
+
+.listMenu{
+   display: none;
+   position: absolute;
+   top: 100%;
+   width: 60vw;
+}
+
+.containerButton:checked~ .listMenu{
+   display: block;
+}
+
+.listMenuTitle, .listMenuItem{
+   padding: 1em;
+   background-color: var(--white);
+}
+
+.listMenuTitle{
+   color: var(--orange);
+   font-weight: 700;
+}
+
+.listMenuLink{
+   color: var(--blueGradient);
+   text-decoration: none;
+   list-style-type: none;
+   text-transform: uppercase;
+}
+
+.containerButton{
+   display: none;
+}

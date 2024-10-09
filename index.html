@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt- BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+ 
+    <title>AluraBooks</title>
+</head>
+
+<body>
+    <header class="navHeader">
+        <div class="container">
+            <input type="checkbox" id="menu" class="containerButton">
+            <label for="menu">
+                <span class="navMenu containerImage"></span>
+            </label>
+
+            <ul class="listMenu">
+                <li class="listMenuTitle">Categorias</li>
+
+                <li class="listMenuItem">
+                    <a href="#" class="listMenuLink">Programação</a>
+                </li>
+                
+                <li class="listMenuItem">
+                    <a href="#" class="listMenuLink">Front-End</a>
+                </li>
+
+                <li class="listMenuItem">
+                    <a href="#" class="listMenuLink">Infraestrutura</a>
+                </li>
+
+                <li class="listMenuItem">
+                    <a href="#" class="listMenuLink">Business</a>
+                </li>
+
+                <li class="listMenuItem">
+                    <a href="#" class="listMenuLink">Design & UX</a>
+                </li>
+            </ul>
+
+            <img src="assets/icons/Logo.svg" alt="Logo da AluraBooks" class="containerImage">
+        </div>
+
+        <div class="container">
+            <a href="#"><img src="assets/icons/Favoritos.svg" alt="Meus Favoritos" class="containerImage"></a>
+            <a href="#"><img src="assets/icons/Compras.svg" alt="Carrinho de Compras" class="containerImage"></a>
+            <a href="#"><img src="assets/icons/Usuário.svg" alt="Meu Perfil" class="containerImage"></a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="bannerTitle">Já sabe por onde começar?</h2>
+        <p class="bannerText">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+
+        <input type="search" class="bannerSearch" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+    <section class="scroll">
+        <h2 class="scrollTitle">Novos Lançamentos</h2>
+
+    <div class="swiper">
+        <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="assets/images/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="assets/images/Liderança.svg" alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="assets/images/Javascript.svg" alt="Livro sobre javascript assertivo da alura books"></div>
+        <div class="swiper-slide"><img src="assets/images/Guia Front-end.svg" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="assets/images/Portugol.svg" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="assets/images/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+        
+        </div>
+        
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+    </div>
+        </div>
+        </section>
+     
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper", {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+            },
+            });
+        </script>
+</body>
+
+</html>
