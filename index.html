@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -69,8 +69,6 @@
 
     <div class="swiper">
         <!-- Slider main container -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
 
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -92,9 +90,134 @@
         <div class="swiper-button-next"></div>
     
     </div>
+
+    <div class="card">
+        <div class="cardDescription">
+            <div class="description">
+                <h3 class="descriptionTitle">Talvez você também se interesse por...</h3>
+                <h2 class="descriptionTitleBook">Angular 11 e Firebase</h2>
+                <p class="descriptionText">Construindo uma aplicação integrada a plataforma do Google.</p>
+            </div>
+
+            <img src="assets/images/Angular.svg" alt="Angular" class="descriptionImage">
         </div>
+
+
+        <div class="cardButtons">
+            <ul class="buttons">
+                <li class="buttonsItem"><img src="assets/icons/Favoritos.svg" alt="Favoritar"></li>
+                <li class="buttonsItem"><img src="assets/icons/Compras.svg" alt="Adiocionar no carrinho de compras"></li>
+            </ul>
+
+            <a href="#" class="buttonLink">Saiba mais</a>
+        </div>
+    </div>
         </section>
      
+
+        <section class="scroll">
+            <h2 class="scrollTitle">Mais Vendidos</h2>
+    
+        <div class="swiper">
+            <!-- Slider main container -->
+    
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+    
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="assets/images/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+            <div class="swiper-slide"><img src="assets/images/Liderança.svg" alt="Livro sobre liderança em design design da alura books"></div>
+            <div class="swiper-slide"><img src="assets/images/Javascript.svg" alt="Livro sobre javascript assertivo da alura books"></div>
+            <div class="swiper-slide"><img src="assets/images/Guia Front-end.svg" alt="Livro Guia front end"></div>
+            <div class="swiper-slide"><img src="assets/images/Portugol.svg" alt="Livro sobre portugol"></div>
+            <div class="swiper-slide"><img src="assets/images/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+            
+            </div>
+            
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+    
+        <div class="card">
+            <div class="cardDescription">
+                <div class="description">
+                    <img src="assets/images/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                    <h3 class="descriptionTitle">Autora do mês</h3>
+                    <h2 class="descriptionTitleBook">Juliana Agarikov</h2>
+                    <p class="descriptionText">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                </div>
+    
+                <img src="assets/images/Perfil-escritora 1.svg" alt="Escritora" class="descriptionImage">
+            </div>
+    
+    
+            <div class="cardButtons">
+                <ul class="buttons">
+                    <li class="buttonsItem"><img src="assets/icons/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="buttonsItem"><img src="assets/icons/Compras.svg" alt="Adiocionar no carrinho de compras"></li>
+                </ul>
+    
+                <a href="#" class="buttonLink">Saiba mais</a>
+            </div>
+        </div>
+            </section>
+
+
+            <section class="topics">
+                <h2 class="topicsTitle">TÓPICOS VISITADOS RECENTEMENTE</h2>
+                
+                <ul class="topicsList">
+                    <li class="topicsItem">
+                        <a href="#" class="topicsLink">Android</a>
+                    </li>
+
+                    <li class="topicsItem">
+                        <a href="#" class="topicsLink">Marketing Digital</a>
+                    </li>
+
+                    <li class="topicsItem">
+                        <a href="#" class="topicsLink">Agile</a>
+                    </li>
+
+                    <li class="topicsItem">
+                        <a href="#" class="topicsLink">Startups</a>
+                    </li>
+
+                    <li class="topicsItem">
+                        <a href="#" class="topicsLink">HTML & CSS</a>
+                    </li>
+
+                    <li class="topicsItem">
+                        <a href="#" class="topicsLink">Python</a>
+                    </li>
+
+                    <li class="topicsItem">
+                        <a href="#" class="topicsLink">OO</a>
+                    </li>
+
+                    <li class="topicsItem">
+                        <a href="#" class="topicsLink">Java</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="contact">
+                <h2 class="contactTitle">Fique por dentro das novidades!</h2>
+                <p class="contactText">Atualizações de e-books, novos livros, promoções e outros.</p>
+
+                <input type="email" placeholder="Cadatre o seu e-mail" class="contactEmail">
+            </section>
+
+            <hr/>
+
+            <footer class="footer">
+                <h2 class="footerTitle">Grupo Alura</h2>
+            </footer>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper(".swiper", {

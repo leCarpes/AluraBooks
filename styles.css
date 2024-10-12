@@ -1,8 +1,9 @@
 @import url("./styles/header.css");
 @import url("./styles/banner.css");
 @import url("./styles/scroll.css");
-
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap'); */
+@import url("./styles/topics.css");
+@import url("./styles/contact.css");
+@import url("./styles/footer.css");
 
 
 :root{
@@ -10,6 +11,7 @@
     --white: #FFFFFF;
     --orange: #EB9800;
     --blueGradient:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --blue: #002F52;
 }
 
 body{
