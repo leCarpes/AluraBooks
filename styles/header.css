@@ -56,3 +56,61 @@
 .containerButton{
    display: none;
 }
+
+.containerTitle{
+   display: none;
+}
+
+.options{
+   display: none;
+}
+
+@media screen and (min-width: 1024px){
+
+   .containerTitle, .containerTitleBold{
+      font-family: var(--fontSecundary);
+      font-size: 30px;
+   }
+
+   .containerTitle{
+      font-weight: 400;
+      display: block;
+   }
+
+   .containerTitleBold{
+      font-weight: 700;
+   }
+
+   .options{
+      display: flex;
+   }
+
+   .optionsItem{
+      padding: 0 1em;
+      text-transform: uppercase;
+   }
+
+   .optionsLink{
+      text-decoration: none;
+      color: var(--black);
+   }
+
+   .containerImageNone{
+      display: none;
+   }
+
+   .navMenu{
+      display: none;
+   }
+
+   .optionsButton:checked~.listMenu{
+      display: block;
+      width: auto;
+   }
+
+
+   .optionsButton{
+      display: none;
+   }
+  
+}

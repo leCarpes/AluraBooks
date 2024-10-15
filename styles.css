@@ -12,11 +12,14 @@
     --orange: #EB9800;
     --blueGradient:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --blue: #002F52;
+    --fontPrimary: "Poppins";
+    --fontSecundary: "Josefin Sans";
+    --black: #000000;
 }
 
 body{
     background-color: var(--backColor);
-    font-family: "Poppins", sans-serif;
+    font-family: var(--fontPrimary);
     font-size: 16px;
     font-weight: 400;
 }

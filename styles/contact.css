@@ -29,7 +29,7 @@
 }
 
 .contactEmail::placeholder{
-    font-family: "Poppins", sans-serif;
+    font-family: var(--fontPrimary);
     color: var(--blue);
     background: url('../assets/icons/Email.svg') no-repeat;
     background-position: left;

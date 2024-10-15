@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    
  
     <title>AluraBooks</title>
 </head>
@@ -48,10 +50,46 @@
             </ul>
 
             <img src="assets/icons/Logo.svg" alt="Logo da AluraBooks" class="containerImage">
+
+            <h1 class="containerTitle"><b class="containerTitleBold">Alura</b>Books</h1>
         </div>
 
+        <ul class="options">
+            <input type="checkbox" id="optionsItemMenu" class="optionsButton">
+            <label for="optionsMenu">
+                <li class="optionsItem">Categorias</li>
+            </label>
+
+            <ul class="listMenu">
+
+                <li class="listMenuItem">
+                    <a href="#" class="listMenuLink">Programação</a>
+                </li>
+                
+                <li class="listMenuItem">
+                    <a href="#" class="listMenuLink">Front-End</a>
+                </li>
+
+                <li class="listMenuItem">
+                    <a href="#" class="listMenuLink">Infraestrutura</a>
+                </li>
+
+                <li class="listMenuItem">
+                    <a href="#" class="listMenuLink">Business</a>
+                </li>
+
+                <li class="listMenuItem">
+                    <a href="#" class="listMenuLink">Design & UX</a>
+                </li>
+            </ul>
+
+            <li class="optionsItem"><a href="#" class="optionsLink">Favoritos</a></li>
+            <li class="optionsItem"><a href="#" class="optionsLink">Minha Estante</a></li>
+           
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="assets/icons/Favoritos.svg" alt="Meus Favoritos" class="containerImage"></a>
+            <a href="#"><img src="assets/icons/Favoritos.svg" alt="Meus Favoritos" class="containerImage containerImageNone"></a>
             <a href="#"><img src="assets/icons/Compras.svg" alt="Carrinho de Compras" class="containerImage"></a>
             <a href="#"><img src="assets/icons/Usuário.svg" alt="Meu Perfil" class="containerImage"></a>
         </div>
@@ -209,7 +247,7 @@
                 <h2 class="contactTitle">Fique por dentro das novidades!</h2>
                 <p class="contactText">Atualizações de e-books, novos livros, promoções e outros.</p>
 
-                <input type="email" placeholder="Cadatre o seu e-mail" class="contactEmail">
+                <input type="email" placeholder="Cadastre o seu e-mail" class="contactEmail">
             </section>
 
             <hr/>
