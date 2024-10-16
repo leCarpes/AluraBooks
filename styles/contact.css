@@ -35,3 +35,26 @@
     background-position: left;
     padding-left: 2em;
 }
+
+@media screen and (min-width: 1024px){
+
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactDescription{
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contactEmail{
+        width: 30%;
+    }
+
+    .contactTitle{
+        font-size: 24px;
+    }
+
+}
