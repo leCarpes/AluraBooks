@@ -8,6 +8,14 @@
    display: inline-block;
 }
 
+.containerButton:checked~.containerLabel>.navMenu{
+   background-image: url("../assets/icons/menu_white.svg");
+}
+
+.containerButton:checked~.containerLabel{
+   background: var(--blueGradient);
+}
+
 .navHeader{
    background-color: var(--white);
    display: flex;
@@ -65,6 +73,10 @@
    display: none;
 }
 
+.containerText{
+   display: none;
+}
+
 @media screen and (min-width: 1024px){
 
    .containerTitle, .containerTitleBold{
@@ -108,9 +120,49 @@
       width: auto;
    }
 
-
    .optionsButton{
       display: none;
    }
   
+   .optionsButton:checked~.optionsLabel>.optionsItem{
+      background: var(--blueGradient);
+      color: var(--white);
+   }
+
+   .optionsItem{
+      padding: 2em 1em;
+      display: flex;
+      align-items: center;
+   }
+
+   .listMenuItem:hover{
+      background: var(--blueGradient);
+   }
+      
+   .listMenuItem:hover>.listMenuLink {
+      -webkit-text-fill-color: var(--white);
+      text-decoration: none;
+   }
+}
+
+@media screen and (min-width: 1728px){
+
+   .containerLink{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--black);
+   }
+
+   .navHeader{
+      padding: 0 2em;
+   }
+
+   .options{
+      margin-right: auto;
+   }
+
+   .containerText{
+      display: block;
+   }
 }

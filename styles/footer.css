@@ -7,7 +7,53 @@ hr{
     padding: 1em;
 }
 
+.listFooter{
+    display: none;
+}
+
 @media screen and (min-width: 1024px){
 
-    
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .listFooter{
+        display: block;
+    }
+
+    .listItem{
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .listFooterLink{
+        color: var(--grey);
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+
+    .listTitle{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: var(--lightGrey);
+    }
+
+    .footerTitle{
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (min-width: 1728px){
+
+    .listFooter{
+        border-left: 1px solid var(--lightGrey);
+        padding-left: 1em;
+    }
+
+    .footer{
+        padding: 3em 0;
+    }
 }

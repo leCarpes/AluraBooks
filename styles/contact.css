@@ -56,5 +56,12 @@
     .contactTitle{
         font-size: 24px;
     }
+}
 
+
+@media screen and (min-width: 1728px){
+
+    .contact{
+        padding: 3em 20vw;
+    }
 }
